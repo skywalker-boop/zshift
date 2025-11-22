@@ -1,0 +1,17 @@
+{
+  "name": "zshift-hardhat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:base": "hardhat run scripts_deploy_zshift.js --network baseSepolia",
+    "deploy:arb": "hardhat run scripts_deploy_zshift.js --network arbitrumSepolia"
+  },
+  "devDependencies": {
+    "hardhat": "^2.14.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "ethers": "^5.7.0",
+    "dotenv": "^16.0.0"
+  }
+}
